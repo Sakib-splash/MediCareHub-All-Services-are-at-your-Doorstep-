@@ -1,0 +1,317 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* html5 reset code */
+
+
+body{
+    background-image: url('loginbg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center; 
+    overflow: hidden;
+    
+  }
+  .navbar a:hover{
+    color: rgb(203, 42, 42);
+    font-size: 1.4em;
+  }
+
+nav{
+    flex: 1;
+    text-align: right;
+  }
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+  }
+nav ul li a{
+    text-decoration: none;
+    color: #131010;
+    font-size: 20px;
+  }
+  
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+   
+    
+}
+
+.form-box{
+    position:relative;
+    width: 400px;
+    height: 450px;
+    background-color: transparent ;
+    border: 2px solid rgba(22, 5, 5, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 2em;
+    color: rgb(81, 60, 60);
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #431b1b;
+
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(18, 18, 18);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color:white;
+}
+.input-box ion-icon{
+    position: absolute;
+    right: 8px;
+    color: rgb(52, 40, 40);
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+
+}
+.forget label input{
+    margin: 3px;
+   
+
+}
+.forget  a{
+    margin-left: 10px;
+    color: rgb(32, 67, 4);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.forget  a:hover{
+    text-decoration: underline;
+    font-size: 1.4em;
+    background-color: #e9bfbf;
+    color: rgb(146, 86, 13);
+    border-radius: 40px;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer ;
+    font-size: 1em;
+    font-weight: 600;
+
+
+}
+button:hover{
+    background-color: #b7f29d;
+}
+.register{
+    font-size: .9em;
+    text-align: center;
+    color: #fff;
+    margin: 25px 0 10px;
+}
+.register p a{
+    color: #045107;
+    
+    text-decoration: none;
+    font-weight: 800;
+}
+.register p a:hover{
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+.logo{
+    margin-top: 20px;
+    width: 10%;
+    cursor: pointer;
+   
+  }
+  @media (max-width: 470px)
+  {
+    .form-box
+    {
+        width: 88%;
+    }
+  }
+
+  /* Footer section */
+/* 
+  footer {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 50px 0;
+  }
+  .footer-body
+  {
+    text-align: center;
+  }
+  footer h4 {
+    font-weight: bold;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+   */
