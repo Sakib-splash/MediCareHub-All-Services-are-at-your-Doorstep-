@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Contact.css">
+  <link rel="stylesheet" href="Index.html">
+  <title>ContactUs</title>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+        <img src="../Home/Logo.png" class="logo">
+        <nav>
+            <ul>
+                <li><a href="http://localhost/MedicareHub/Home/"> Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="http://localhost/MediCareHub/about/About.html">About Us</a></li>
+                <li><a href="http://localhost/MedicareHub/contact/Contact.html">Contact Us</a></li>
+                <li><a href="http://localhost/MedicareHub/login/">SignUp</a></li>
+            </ul>
+        </nav>
+      </div>
+
+      <div class="container1">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <p>Leave a message for us:</p>
+        </div>
+        <div class="row">
+          <div class="column1">
+            <img src="./Contact1.jpg" style="width:100%">
+          </div>
+          <div class="column2">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Bangladesh</option>
+                <option value="canada">India</option>
+                <option value="usa">Pakistan</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <a href="http://localhost/MedicareHub/update/index.php"><input type="button" value="Submit"></a>
+            </form>
+          </div>
+        </div>
+      </div>
+   </div>
+</body>
+</html>
